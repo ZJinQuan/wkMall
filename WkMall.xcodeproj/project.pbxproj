@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		147E6AE31D11030F001AEE5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E6AE21D11030F001AEE5D /* main.m */; };
+		147E6AE61D11030F001AEE5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E6AE51D11030F001AEE5D /* AppDelegate.m */; };
+		147E6AEE1D11030F001AEE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E6AED1D11030F001AEE5D /* Assets.xcassets */; };
+		147E6AF11D11030F001AEE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147E6AEF1D11030F001AEE5D /* LaunchScreen.storyboard */; };
+		147E6AFC1D11030F001AEE5D /* WkMallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E6AFB1D11030F001AEE5D /* WkMallTests.m */; };
+		147E6B071D11030F001AEE5D /* WkMallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E6B061D11030F001AEE5D /* WkMallUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		147E6AF81D11030F001AEE5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147E6AD61D11030F001AEE5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147E6ADD1D11030F001AEE5D;
+			remoteInfo = WkMall;
+		};
+		147E6B031D11030F001AEE5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147E6AD61D11030F001AEE5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147E6ADD1D11030F001AEE5D;
+			remoteInfo = WkMall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		147E6ADE1D11030F001AEE5D /* WkMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WkMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		147E6AE21D11030F001AEE5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		147E6AE41D11030F001AEE5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		147E6AE51D11030F001AEE5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		147E6AED1D11030F001AEE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		147E6AF01D11030F001AEE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		147E6AF21D11030F001AEE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147E6AF71D11030F001AEE5D /* WkMallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WkMallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		147E6AFB1D11030F001AEE5D /* WkMallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WkMallTests.m; sourceTree = "<group>"; };
+		147E6AFD1D11030F001AEE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147E6B021D11030F001AEE5D /* WkMallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WkMallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		147E6B061D11030F001AEE5D /* WkMallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WkMallUITests.m; sourceTree = "<group>"; };
+		147E6B081D11030F001AEE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147E6ADB1D11030F001AEE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147E6AF41D11030F001AEE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147E6AFF1D11030F001AEE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147E6AD51D11030F001AEE5D = {
+			isa = PBXGroup;
+			children = (
+				147E6AE01D11030F001AEE5D /* WkMall */,
+				147E6AFA1D11030F001AEE5D /* WkMallTests */,
+				147E6B051D11030F001AEE5D /* WkMallUITests */,
+				147E6ADF1D11030F001AEE5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		147E6ADF1D11030F001AEE5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147E6ADE1D11030F001AEE5D /* WkMall.app */,
+				147E6AF71D11030F001AEE5D /* WkMallTests.xctest */,
+				147E6B021D11030F001AEE5D /* WkMallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		147E6AE01D11030F001AEE5D /* WkMall */ = {
+			isa = PBXGroup;
+			children = (
+				147E6AE41D11030F001AEE5D /* AppDelegate.h */,
+				147E6AE51D11030F001AEE5D /* AppDelegate.m */,
+				147E6AED1D11030F001AEE5D /* Assets.xcassets */,
+				147E6AEF1D11030F001AEE5D /* LaunchScreen.storyboard */,
+				147E6AF21D11030F001AEE5D /* Info.plist */,
+				147E6AE11D11030F001AEE5D /* Supporting Files */,
+			);
+			path = WkMall;
+			sourceTree = "<group>";
+		};
+		147E6AE11D11030F001AEE5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				147E6AE21D11030F001AEE5D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		147E6AFA1D11030F001AEE5D /* WkMallTests */ = {
+			isa = PBXGroup;
+			children = (
+				147E6AFB1D11030F001AEE5D /* WkMallTests.m */,
+				147E6AFD1D11030F001AEE5D /* Info.plist */,
+			);
+			path = WkMallTests;
+			sourceTree = "<group>";
+		};
+		147E6B051D11030F001AEE5D /* WkMallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				147E6B061D11030F001AEE5D /* WkMallUITests.m */,
+				147E6B081D11030F001AEE5D /* Info.plist */,
+			);
+			path = WkMallUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		147E6ADD1D11030F001AEE5D /* WkMall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147E6B0B1D11030F001AEE5D /* Build configuration list for PBXNativeTarget "WkMall" */;
+			buildPhases = (
+				147E6ADA1D11030F001AEE5D /* Sources */,
+				147E6ADB1D11030F001AEE5D /* Frameworks */,
+				147E6ADC1D11030F001AEE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WkMall;
+			productName = WkMall;
+			productReference = 147E6ADE1D11030F001AEE5D /* WkMall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		147E6AF61D11030F001AEE5D /* WkMallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147E6B0E1D11030F001AEE5D /* Build configuration list for PBXNativeTarget "WkMallTests" */;
+			buildPhases = (
+				147E6AF31D11030F001AEE5D /* Sources */,
+				147E6AF41D11030F001AEE5D /* Frameworks */,
+				147E6AF51D11030F001AEE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147E6AF91D11030F001AEE5D /* PBXTargetDependency */,
+			);
+			name = WkMallTests;
+			productName = WkMallTests;
+			productReference = 147E6AF71D11030F001AEE5D /* WkMallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		147E6B011D11030F001AEE5D /* WkMallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147E6B111D11030F001AEE5D /* Build configuration list for PBXNativeTarget "WkMallUITests" */;
+			buildPhases = (
+				147E6AFE1D11030F001AEE5D /* Sources */,
+				147E6AFF1D11030F001AEE5D /* Frameworks */,
+				147E6B001D11030F001AEE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147E6B041D11030F001AEE5D /* PBXTargetDependency */,
+			);
+			name = WkMallUITests;
+			productName = WkMallUITests;
+			productReference = 147E6B021D11030F001AEE5D /* WkMallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147E6AD61D11030F001AEE5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = QUAN;
+				TargetAttributes = {
+					147E6ADD1D11030F001AEE5D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					147E6AF61D11030F001AEE5D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 147E6ADD1D11030F001AEE5D;
+					};
+					147E6B011D11030F001AEE5D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 147E6ADD1D11030F001AEE5D;
+					};
+				};
+			};
+			buildConfigurationList = 147E6AD91D11030F001AEE5D /* Build configuration list for PBXProject "WkMall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147E6AD51D11030F001AEE5D;
+			productRefGroup = 147E6ADF1D11030F001AEE5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147E6ADD1D11030F001AEE5D /* WkMall */,
+				147E6AF61D11030F001AEE5D /* WkMallTests */,
+				147E6B011D11030F001AEE5D /* WkMallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147E6ADC1D11030F001AEE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147E6AF11D11030F001AEE5D /* LaunchScreen.storyboard in Resources */,
+				147E6AEE1D11030F001AEE5D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147E6AF51D11030F001AEE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147E6B001D11030F001AEE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147E6ADA1D11030F001AEE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147E6AE61D11030F001AEE5D /* AppDelegate.m in Sources */,
+				147E6AE31D11030F001AEE5D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147E6AF31D11030F001AEE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147E6AFC1D11030F001AEE5D /* WkMallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147E6AFE1D11030F001AEE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147E6B071D11030F001AEE5D /* WkMallUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		147E6AF91D11030F001AEE5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147E6ADD1D11030F001AEE5D /* WkMall */;
+			targetProxy = 147E6AF81D11030F001AEE5D /* PBXContainerItemProxy */;
+		};
+		147E6B041D11030F001AEE5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147E6ADD1D11030F001AEE5D /* WkMall */;
+			targetProxy = 147E6B031D11030F001AEE5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		147E6AEF1D11030F001AEE5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147E6AF01D11030F001AEE5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		147E6B091D11030F001AEE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		147E6B0A1D11030F001AEE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		147E6B0C1D11030F001AEE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WkMall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.QUAN.WkMall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		147E6B0D1D11030F001AEE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WkMall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.QUAN.WkMall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		147E6B0F1D11030F001AEE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WkMallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.QUAN.WkMallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WkMall.app/WkMall";
+			};
+			name = Debug;
+		};
+		147E6B101D11030F001AEE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WkMallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.QUAN.WkMallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WkMall.app/WkMall";
+			};
+			name = Release;
+		};
+		147E6B121D11030F001AEE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WkMallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.QUAN.WkMallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WkMall;
+			};
+			name = Debug;
+		};
+		147E6B131D11030F001AEE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WkMallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.QUAN.WkMallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WkMall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147E6AD91D11030F001AEE5D /* Build configuration list for PBXProject "WkMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147E6B091D11030F001AEE5D /* Debug */,
+				147E6B0A1D11030F001AEE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147E6B0B1D11030F001AEE5D /* Build configuration list for PBXNativeTarget "WkMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147E6B0C1D11030F001AEE5D /* Debug */,
+				147E6B0D1D11030F001AEE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		147E6B0E1D11030F001AEE5D /* Build configuration list for PBXNativeTarget "WkMallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147E6B0F1D11030F001AEE5D /* Debug */,
+				147E6B101D11030F001AEE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		147E6B111D11030F001AEE5D /* Build configuration list for PBXNativeTarget "WkMallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147E6B121D11030F001AEE5D /* Debug */,
+				147E6B131D11030F001AEE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 147E6AD61D11030F001AEE5D /* Project object */;
+}
