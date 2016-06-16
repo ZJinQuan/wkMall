@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" id="KGk-i7-Jjw" customClass="ListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HURT AKCEOR II SAMOCHODOWYCH" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIP-mG-2pm">
+                        <rect key="frame" x="109" y="8" width="203" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="LYk-p1-dNu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMJ-cT-lP6">
+                        <rect key="frame" x="109" y="65" width="40" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="j6D-CM-RCM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.87058823529411766" green="0.43529411764705883" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="面议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZc-U9-FXv">
+                        <rect key="frame" x="149" y="66" width="163" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="QrZ-sR-cpE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.87058823529999996" green="0.43529411759999997" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rice cooker.png" translatesAutoresizingMaskIntoConstraints="NO" id="xJU-8V-cgH">
+                        <rect key="frame" x="8" y="8" width="85" height="83.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="YOs-YN-Lk7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KZc-U9-FXv" firstAttribute="centerY" secondItem="AMJ-cT-lP6" secondAttribute="centerY" id="8YI-Ku-BRG"/>
+                    <constraint firstItem="xJU-8V-cgH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="FnA-uW-Xcr"/>
+                    <constraint firstAttribute="trailing" secondItem="QIP-mG-2pm" secondAttribute="trailing" constant="8" id="IQs-CF-ES6"/>
+                    <constraint firstItem="xJU-8V-cgH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IbB-I3-Law"/>
+                    <constraint firstItem="QIP-mG-2pm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Nyw-hr-CBS"/>
+                    <constraint firstItem="KZc-U9-FXv" firstAttribute="leading" secondItem="AMJ-cT-lP6" secondAttribute="trailing" id="UcP-8P-e6m"/>
+                    <constraint firstItem="AMJ-cT-lP6" firstAttribute="leading" secondItem="xJU-8V-cgH" secondAttribute="trailing" constant="16" id="ZAQ-CT-5Hc"/>
+                    <constraint firstAttribute="bottom" secondItem="AMJ-cT-lP6" secondAttribute="bottom" constant="8" id="bIh-ZF-GJz"/>
+                    <constraint firstAttribute="bottom" secondItem="xJU-8V-cgH" secondAttribute="bottom" constant="8" id="nle-QJ-HJs"/>
+                    <constraint firstItem="AMJ-cT-lP6" firstAttribute="top" secondItem="QIP-mG-2pm" secondAttribute="bottom" constant="8" id="rjv-kY-mIO"/>
+                    <constraint firstAttribute="trailing" secondItem="KZc-U9-FXv" secondAttribute="trailing" constant="8" id="uIw-Bu-hTY"/>
+                    <constraint firstItem="xJU-8V-cgH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yHA-H5-tEL"/>
+                    <constraint firstItem="QIP-mG-2pm" firstAttribute="leading" secondItem="xJU-8V-cgH" secondAttribute="trailing" constant="16" id="zrF-lQ-6p1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImage" destination="xJU-8V-cgH" id="qrD-Ua-0e0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rice cooker.png" width="90" height="90"/>
+    </resources>
+</document>
