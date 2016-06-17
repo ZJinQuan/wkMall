@@ -27,9 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
-
-    
 }
 
 - (IBAction)clickEnterBtn:(id)sender {

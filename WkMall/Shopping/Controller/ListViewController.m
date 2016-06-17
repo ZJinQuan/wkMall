@@ -8,6 +8,7 @@
 
 #import "ListViewController.h"
 #import "ListCell.h"
+#import "DetailsViewController.h"
 
 @interface ListViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *listTableView;
@@ -53,7 +54,12 @@
     return cell;
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    DetailsViewController *detailsVC = [[DetailsViewController alloc] init];
+    
+    [self.navigationController pushViewController:detailsVC animated:YES];
+}
 
 
 @end

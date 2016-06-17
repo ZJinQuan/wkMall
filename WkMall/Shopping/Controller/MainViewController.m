@@ -29,7 +29,14 @@
     scrl.delegate = self;
     scrl.timeInterval = 2.0;
     
+    
     [self.mainScrollView addSubview:scrl.view];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    
+    [super viewDidDisappear:animated];
+
 }
 
 - (void)viewDidLoad {

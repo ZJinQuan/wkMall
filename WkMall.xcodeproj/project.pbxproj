@@ -58,6 +58,8 @@
 		14F3521A1D125B1100CA6689 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F352181D125B1100CA6689 /* ListViewController.xib */; };
 		14F3521E1D125F6800CA6689 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F3521C1D125F6800CA6689 /* ListCell.m */; };
 		14F3521F1D125F6800CA6689 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F3521D1D125F6800CA6689 /* ListCell.xib */; };
+		14F352231D1282F100CA6689 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F352211D1282F100CA6689 /* DetailsViewController.m */; };
+		14F352241D1282F100CA6689 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F352221D1282F100CA6689 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +152,9 @@
 		14F3521B1D125F6800CA6689 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
 		14F3521C1D125F6800CA6689 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
 		14F3521D1D125F6800CA6689 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		14F352201D1282F100CA6689 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		14F352211D1282F100CA6689 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		14F352221D1282F100CA6689 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +345,9 @@
 				14F352161D125B1100CA6689 /* ListViewController.h */,
 				14F352171D125B1100CA6689 /* ListViewController.m */,
 				14F352181D125B1100CA6689 /* ListViewController.xib */,
+				14F352201D1282F100CA6689 /* DetailsViewController.h */,
+				14F352211D1282F100CA6689 /* DetailsViewController.m */,
+				14F352221D1282F100CA6689 /* DetailsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -470,6 +478,7 @@
 				147E6B7B1D1111F9001AEE5D /* home_memberpre@2x.png in Resources */,
 				147E6B851D1111F9001AEE5D /* return@2x.png in Resources */,
 				147E6AF11D11030F001AEE5D /* LaunchScreen.storyboard in Resources */,
+				14F352241D1282F100CA6689 /* DetailsViewController.xib in Resources */,
 				147E6B871D1111F9001AEE5D /* show_last@2x.png in Resources */,
 				147E6B751D1111F9001AEE5D /* china@2x.png in Resources */,
 				147E6B731D1111F9001AEE5D /* arrow@2x.png in Resources */,
@@ -528,6 +537,7 @@
 				149DF6601D11658100B03E53 /* UIView+Extension.m in Sources */,
 				14F352031D123C5E00CA6689 /* ShopViewController.m in Sources */,
 				14F352011D123C5E00CA6689 /* MainViewController.m in Sources */,
+				14F352231D1282F100CA6689 /* DetailsViewController.m in Sources */,
 				147E6B9C1D112A37001AEE5D /* ConfigViewController.m in Sources */,
 				147E6B9E1D112A37001AEE5D /* MapViewController.m in Sources */,
 				147E6AE31D11030F001AEE5D /* main.m in Sources */,

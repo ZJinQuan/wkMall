@@ -95,11 +95,6 @@ BEdE6LSt54mp5Lit5b+D5LiA5Y+35qW8A
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="s2I-zh-U59"/>
                                     </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="frame.size.width">
-                                            <real key="value" value="0.5"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
                                 </view>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="EJh-RZ-rWj">
                                     <rect key="frame" x="304" y="12" width="8" height="15"/>
