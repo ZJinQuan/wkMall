@@ -106,6 +106,7 @@
         _pageControl.numberOfPages = _imageCount;
         _pageControl.currentPage = 0;
         
+        _pageControl.userInteractionEnabled = NO;
     }
     return _pageControl;
 }

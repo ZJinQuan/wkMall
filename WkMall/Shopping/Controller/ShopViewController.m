@@ -57,9 +57,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
+
     //导航栏
     [self initnav];
     

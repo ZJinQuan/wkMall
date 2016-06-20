@@ -58,6 +58,28 @@
                         <outlet property="delegate" destination="-1" id="7SS-dk-S8e"/>
                     </connections>
                 </scrollView>
+                <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1a-ds-pUF">
+                    <rect key="frame" x="8" y="61" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="Do4-yg-fFj"/>
+                        <constraint firstAttribute="height" constant="38" id="f23-qk-erV"/>
+                    </constraints>
+                    <state key="normal" image="show_last.png"/>
+                    <connections>
+                        <action selector="clickShowBtn:" destination="-1" eventType="touchUpInside" id="Y4x-pl-HRk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoE-a8-MLy">
+                    <rect key="frame" x="274" y="61" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="Ur8-YX-WNQ"/>
+                        <constraint firstAttribute="height" constant="38" id="tVx-oz-C2R"/>
+                    </constraints>
+                    <state key="normal" image="show_next.png"/>
+                    <connections>
+                        <action selector="clickShowBtn:" destination="-1" eventType="touchUpInside" id="0cY-GU-YgG"/>
+                    </connections>
+                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z85-6E-lgc">
                     <rect key="frame" x="0.0" y="160" width="320" height="60"/>
                     <subviews>
@@ -244,10 +266,14 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Z85-6E-lgc" firstAttribute="top" secondItem="y5m-ZD-dON" secondAttribute="bottom" id="1bf-2B-Ylh"/>
+                <constraint firstItem="a1a-ds-pUF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="9OT-Ig-QFs"/>
                 <constraint firstItem="y5m-ZD-dON" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EMA-in-1Cp"/>
                 <constraint firstAttribute="bottom" secondItem="TGk-Q9-V2Q" secondAttribute="bottom" id="Fbp-9Y-DL0"/>
+                <constraint firstItem="eoE-a8-MLy" firstAttribute="centerY" secondItem="y5m-ZD-dON" secondAttribute="centerY" id="HY7-27-5LK"/>
                 <constraint firstAttribute="trailing" secondItem="y5m-ZD-dON" secondAttribute="trailing" id="IJL-rt-c7s"/>
                 <constraint firstItem="y5m-ZD-dON" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KXq-yb-uHc"/>
+                <constraint firstAttribute="trailing" secondItem="eoE-a8-MLy" secondAttribute="trailing" constant="8" id="MO9-q6-pcj"/>
+                <constraint firstItem="a1a-ds-pUF" firstAttribute="centerY" secondItem="y5m-ZD-dON" secondAttribute="centerY" id="Mme-rJ-lXH"/>
                 <constraint firstItem="B2N-MQ-Yf2" firstAttribute="top" secondItem="Z85-6E-lgc" secondAttribute="bottom" id="NoW-cB-tW7"/>
                 <constraint firstAttribute="trailing" secondItem="TGk-Q9-V2Q" secondAttribute="trailing" id="P1U-l9-eeC"/>
                 <constraint firstItem="Z85-6E-lgc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RMq-a7-FAy"/>
@@ -261,5 +287,7 @@
     </objects>
     <resources>
         <image name="arrow.png" width="8" height="15"/>
+        <image name="show_last.png" width="38" height="38"/>
+        <image name="show_next.png" width="76" height="76"/>
     </resources>
 </document>
