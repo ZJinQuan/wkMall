@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigViewController">
             <connections>
+                <outlet property="configView" destination="YR0-qG-yft" id="pwW-Yq-MGR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="YR0-qG-yft">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="FfY-4F-hgw"/>
+                        <outlet property="delegate" destination="-1" id="3FC-we-Pci"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YR0-qG-yft" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="78d-Yi-LcG"/>
+                <constraint firstItem="YR0-qG-yft" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hyx-Jf-mcH"/>
+                <constraint firstAttribute="trailing" secondItem="YR0-qG-yft" secondAttribute="trailing" id="OUB-7L-Ywx"/>
+                <constraint firstAttribute="bottom" secondItem="YR0-qG-yft" secondAttribute="bottom" id="Xvs-2X-q30"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>

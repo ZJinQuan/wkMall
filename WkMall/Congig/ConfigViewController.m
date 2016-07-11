@@ -8,7 +8,8 @@
 
 #import "ConfigViewController.h"
 
-@interface ConfigViewController ()
+@interface ConfigViewController ()<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *configView;
 
 @end
 
@@ -17,21 +18,41 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [_configView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"configCell"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark UITableViewDelegate and UITableViewDataSource
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 15;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
 }
-*/
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *ID = @"configCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    NSArray *titleArr = @[@"语言设置", @"关于我们"];
+    
+    cell.textLabel.text = titleArr[indexPath.row];
+    
+    
+    return cell;
+}
+
 
 @end
