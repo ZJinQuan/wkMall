@@ -10,18 +10,11 @@
 #import "ScrollImage.h"
 #import "ShopCell.h"
 #import "CommodityViewController.h"
+#import "ShopTopCell.h"
 
 @interface ShopViewController ()<ScrollImageDelegate,UICollectionViewDelegate, UICollectionViewDataSource>
-@property (weak, nonatomic) IBOutlet UIView *topImage;
-@property (weak, nonatomic) IBOutlet UICollectionView *shopCollView;
-@property (weak, nonatomic) IBOutlet UIButton *dianQiBtn;
-@property (weak, nonatomic) IBOutlet UIButton *fuZhuangBtn;
-@property (weak, nonatomic) IBOutlet UIButton *foodBtn;
-@property (weak, nonatomic) IBOutlet UIButton *jiaJuBtn;
-@property (weak, nonatomic) IBOutlet UIButton *shanPinBtn;
-@property (weak, nonatomic) IBOutlet UIButton *qiPeiBtn;
 
-@property (weak, nonatomic) IBOutlet UIView *selectView;
+@property (weak, nonatomic) IBOutlet UICollectionView *shopCollView;
 
 @property (nonatomic, strong) UIButton *starButton;
 
@@ -40,17 +33,6 @@
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
-    
-    //图片轮播器
-    NSArray *imageArr = @[@"china", @"bannner"];
-    
-    ScrollImage *scrl = [[ScrollImage alloc] initWithCurrentController:self imageNames:imageArr viewFrame:self.topImage.bounds placeholderImage:[UIImage imageNamed:@""]];
-    
-    scrl.delegate = self;
-    scrl.timeInterval = 2.0;
-    
-    [self.topImage addSubview:scrl.view];
-
     
 }
 
@@ -76,49 +58,76 @@
     
     self.shopCollView.collectionViewLayout = flowLayout;
     
-    [self.shopCollView registerNib:[UINib nibWithNibName:@"ShopCell" bundle:nil] forCellWithReuseIdentifier:@"ShopCell"];
     
-//    [self.shopCollView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellid"];
+    [self.shopCollView registerNib:[UINib nibWithNibName:@"ShopCell" bundle:nil] forCellWithReuseIdentifier:@"ShopCell"];
+    [self.shopCollView registerNib:[UINib nibWithNibName:@"ShopTopCell" bundle:nil] forCellWithReuseIdentifier:@"shopTopCell"];
     
     self.shopCollView.backgroundView.backgroundColor = [UIColor yellowColor];
     
     self.shopCollView.backgroundColor = [UIColor whiteColor];
-    
-//    self.shopCollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 5);
 
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clickClassify:) name:@"clickClassify" object:nil];
 }
-
-- (IBAction)clickClassifyBtn:(UIButton *)sender {
+-(void) clickClassify: (NSNotification *)notf{
     
-    if(sender != self.starButton){
-        self.starButton.selected=NO;
-        self.starButton=sender;
-    }
-    self.starButton.selected=YES;
- 
-    [UIView animateWithDuration:0.3 animations:^{
-        
-        self.selectView.x = sender.x;
-        
-    }];
-
     [self.shopCollView setContentOffset:CGPointMake(0, 0) animated:YES];
     [self.shopCollView reloadData];
+    
 }
 
 #pragma mark UICollectionViewDelegate and UICollectionViewDataSource
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 2;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    if (section == 0) {
+        return 1;
+    }
     return 9;
 }
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CGSize size;
+    
+    if (indexPath.section == 0) {
+        size = CGSizeMake(kScreenWidth, 190);
+        
+    }else{
+        
+        CGFloat W = (kScreenWidth ) / 2 - 2.5;
+        
+        size = CGSizeMake(W, W + 50);
+    }
+    
+    return size;
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 
-    static NSString *cellID = @"ShopCell";
-    
-    ShopCell * cell  = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-    
-//    cell.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
- 
-    return cell;
+    if (indexPath.section == 0) {
+        
+        static NSString *cellID = @"shopTopCell";
+        
+        ShopTopCell * cell  = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+        
+        cell.delegate = self;
+        cell.shopVC = self;
+        
+        return cell;
+        
+    }else{
+        
+        static NSString *cellID = @"ShopCell";
+        
+        ShopCell * cell  = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+        
+        return cell;
+        
+    }
+    return nil;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{

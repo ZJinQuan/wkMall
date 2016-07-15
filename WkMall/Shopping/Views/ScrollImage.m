@@ -98,6 +98,7 @@
 - (UIPageControl *)pageControl
 {
     if (_pageControl == nil) {
+        
         _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, _frame.size.height-20, _frame.size.width, 20)];
         
         _pageControl.pageIndicatorTintColor = RGBA(110, 110, 110, 1);

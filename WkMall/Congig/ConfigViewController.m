@@ -7,6 +7,7 @@
 //
 
 #import "ConfigViewController.h"
+#import "LanguageController.h"
 
 @interface ConfigViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *configView;
@@ -54,5 +55,28 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    switch (indexPath.row) {
+        case 0:{
+            
+            LanguageController *languageVC = [[LanguageController alloc] init];
+            languageVC.title = @"语言设置";
+            
+            [languageVC setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:languageVC animated:YES];
+            
+        }
+            break;
+        case 1:{
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+}
 
 @end

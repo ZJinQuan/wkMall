@@ -33,4 +33,16 @@
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
 }
 
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    UITouch *touch = [touches anyObject];
+    
+    if (touch.tapCount >= 1) {
+        
+        [self.view endEditing:YES];
+        
+    }
+}
+
 @end
